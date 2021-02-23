@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>krishna ji</title>
+
+<style>
+	#heading{
+	    width:1350px;
+		height: 70px;
+		position: absolute;
+		border: 2px dotted grey;
+		background-color: lightgreen;
+    }
+
+     #img1{
+     	position: absolute;
+        width:200px;
+        height: :50px;
+
+    }
+
+    li{
+        display:inline;
+        font-size: 30px;
+         
+       }
+
+     ol {
+
+     
+      
+     word-spacing: 30px;
+     font-size:20px;
+     float: right;
+     padding-right: 300px;
+     margin: 15px;
+     }  
+
+     #panel {
+     color:whit;
+     background-color:#fc0313;
+     border: 2px solid black;
+     display: none;
+     color:bold;
+     font-size:30px;
+     float: right;
+     padding-right: 485px;
+     margin : 15px;
+     font-weight: bold;
+    
+   }
+
+   #second{
+   	position: absolute;
+   top: 84px;
+
+   }
+
+   #inner{
+   	width: 1350px;
+    height:575px;
+    border: 1px solid green; 
+    background-color: #fcd303;
+   }
+
+   #inner1{
+    width: 1000px;
+    height: 400px;
+    border: 1px solid red;
+    margin:20px 150px 20px 80px;
+    padding :20px 20px 20px 20px;
+    border-radius: 50px 20px;
+    
+   }
+   
+   #img11{
+   	width: 450px;
+    height: 280px;
+    border: 1px solid red;
+    float:left; 
+    margin:20px 0px 0px 30px;
+    border-radius: 50px 20px;
+    
+   }
+
+      #img2{
+   	width: 450px;
+    height: 280px;
+    border: 1px solid red;
+     float:left; 
+      margin:20px 0px 0px 20px;
+     border-radius: 50px 20px;
+   }
+
+   img{
+   	 max-width: 100%;
+     max-height: 100%;
+     display: block;
+   }
+
+  #kkk{
+   position: absolute;
+   top: 961px;
+   width:1350px;
+   background-color: #fa9898;
+   border: 4px dotted yellow;
+  }
+
+  .riceImg{
+  	//background-color:#d9f7b5;
+  	height:400px;
+  	width:1350px;
+  	display: none;
+  }
+
+
+  #rice1,#rice2,#rice3{
+  	float: left;
+    margin:20px;
+    background-color:#d9f7b5;
+    padding:10px;
+
+  }
+
+  h3{
+  	color: blue;
+
+  }
+
+  *{
+  	text-transform:capitalize;
+  }
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="heading">
+
+	 <img id="img1" src="DMart-logo.png" alt="img of heading" />
+      <ol>
+      	<li> home </li>
+      	<li> about </li>
+      	<li id="flip">contact-us</li>
+      	<li> help </li>
+      	<li><input type="text" name="search">search</ins></li>
+      </ol>
+	  
+</div>
+
+<section> 
+<div id="second">
+
+ <img style="width:1350px; height: 300px;  opacity:0.6;" src="heading.jpg" alt="image not availave" />
+  
+   <div id="inner">
+   	  <h1>shopping</h1>
+   	    <div id="inner1"> 
+   	   		 <h2>cooking oils </h2>
+
+   	 		 <div id="img11"><img style="height: 210px;" src="           1-July-2020-2cw-oil.jpg ">
+   	 		 	  <p>hello krishna  ghee oil usegae hehehe	</p>
+   	 		 </div> 
+      	    <div id="img2"><img style="height: 210px;"  src="1-July-2020-2cw-ghee.jpg">
+      	     <p>ghee khaiye sahab svasth rahiye hahahahahahah</p>
+      	    </div>
+   	    </div>
+   </div>
+  
+</div>
+
+ 
+
+ <div id="kkk">
+  <form>
+  	<label>kya kharidenge aap</label>
+  	<select class="menu">
+  		<option value="ghee">ghee</option>
+  		<option value="oil">oil</option>
+  		<option value="rice">rice</option>
+  	</select>
+
+
+    <br><br>
+  	<label>plz type quantity</label>
+  	<input type="text" name="">
+  	 
+  	   <div class="riceImg"> 
+          
+         <br>
+          <div id="rice1">
+          	<img style="height:200px;width:350px;" 
+          	src="basmati.jpg" alt="rice " onclick="basmati()" />
+          	<h1>Basmati Rice</h1>
+          	<h2>price : 100 rps per kg</h2>
+          	<label for="points">in kgs:</label>
+ 			<input type="number" id="points" name="points" step="1">
+  			<input type="submit">
+          </div>
+
+          <div id="rice2">
+          	<img style="height:200px;width:350px;"  
+          	src="kolam.jpg" alt="rice " />
+          	<h1>Kolam Rice</h1>
+          	<h2>price : 60 rps per kg</h2>
+          	<label for="points">in kgs:</label>
+ 			<input type="number" id="points" name="points" step="1">
+  			<input type="submit">
+          </div>
+
+          <div id="rice3">
+          	<img style="height:200px;width:350px;"  
+          	src="ukda.jpg" alt="rice " />
+          	<h1>Ukda ricd</h1>
+          	<h2>price : 35 rps per kg</h2>
+          	 <label>in kgs:</label>
+ 			<input type="number" step="1">
+  			<input type="submit">
+          </div>
+
+ 	   </div>  
+
+     
+
+     	<br><br>
+  	 <input type="submit" name="">
+  </form>
+
+   <br><br>
+
+<div id="count"></div>
+
+ </div>
+</section>
+
+  
+
+<!--script starts here  -->
+
+<script>
+	 
+	
+	$(document).ready(function(){
+  $("#flip").click(function(){
+    alert("ph:9865321472  rahul kumar");
+  });
+});
+
+	$(document).ready(function(){
+  $("li").click(function(){
+    alert("welcome");
+  });
+});
+
+$(document).ready(function(){
+    $("select.menu").change(function(){
+        var selecteditem = $(this).children("option:selected").val();
+         var x="oil";
+         var y="ghee";
+         var z="rice";
+        if(selecteditem==x){
+          alert("You have selected the item - " + selecteditem + " its price is 12rps");
+        }
+         else if(selecteditem==y){
+         	 alert("You have selected the item - " + selecteditem + " its price is 16rps");
+         }
+
+         else if(selecteditem==z){
+         	 alert("You have selected the item - " + selecteditem + " its price is 16rps");
+
+         	  $(document).ready(function(){
+ 	             $('.riceImg').show("slide");
+ 	           });
+
+         	   }
+
+         
+    });
+});
+
+  
+ function basmati(){
+ 	alert("this is basmati");
+ }
+
+ 
+
+</script>
+</body>
+</html>
+ 
